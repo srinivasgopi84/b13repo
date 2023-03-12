@@ -7,4 +7,4 @@ ADD https://archive.apache.org/dist/tomcat/tomcat-10/v10.0.8/bin/apache-tomcat-1
 RUN tar -xvf apache-tomcat-10.0.8.tar.gz
 RUN mv apache-tomcat-10.0.8/* /tomcat
 EXPOSE 8080
-CMD ["/tomcat/bin/catalina.sh", "run"]
+ENTRYPOINT ["/tomcat/bin/catalina.sh", "run"]
