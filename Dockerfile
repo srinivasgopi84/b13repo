@@ -8,3 +8,4 @@ RUN tar -xvf apache-tomcat-10.0.8.tar.gz
 RUN mv apache-tomcat-10.0.8/* /tomcat
 EXPOSE 8080
 ENTRYPOINT ["/tomcat/bin/catalina.sh", "run"]
+
